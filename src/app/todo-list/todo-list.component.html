@@ -1,0 +1,19 @@
+<div class="todo-list-wrapper">
+  <mat-card *ngFor="let d of data">
+    <div class="card-elements-wrapper" [ngClass]="{
+      'border-green': d.isComplete,
+      'border-red': !d.isComplete && d.isImportant
+    }">
+      <mat-card-header>
+        <mat-card-title> {{d.name}} </mat-card-title>
+        <mat-card-subtitle>{{d.createdAt | date}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <div>
+        <button mat-icon-button matTooltip="Complete Task" matTooltipPosition="above" [class.colour-green]="d.isComplete" (click)="markComplete(d)"><mat-icon> task_alt</mat-icon> </button>
+        <button mat-icon-button matTooltip="Mark as Important" matTooltipPosition="above" [class.colour-red]="d.isImportant" (click)="markImportant(d)"> <mat-icon> flag </mat-icon> </button>
+        <button mat-icon-button matTooltip="Delete Task" matTooltipPosition="above" (click)="delete(d.id)"> <mat-icon> highlight_off </mat-icon> </button>
+      </div>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,23 @@
+.add-button {
+  width: 84px !important;
+  height: 84px !important;
+  line-height: 84px !important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  mat-icon {
+     width: 42px !important;
+     height: 42px !important;
+     line-height: 42px !important;
+     font-size: 42px !important;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.filter-wrapper{
+  padding: 15px;
+}

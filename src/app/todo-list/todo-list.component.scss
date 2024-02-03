@@ -1,0 +1,33 @@
+.todo-list-wrapper{
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-elements-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.colour-green{
+  color: green;
+}
+
+.border-green{
+  border: green 3px solid;
+  border-radius: 2px;
+}
+
+.border-red{
+  border-color: red 3px solid;
+  border-radius: 2px;
+}
+
+.colour-red{
+  color: red;
+}
